@@ -17,6 +17,4 @@ public class Constant {
             , "https://kbu-cdn.com/dk/wp-content/uploads/brownies-kurma.jpg"
             , "https://images-gmi-pmc.edge-generalmills.com/ab5e4c56-9725-439a-bbab-ed92b89e07b9.jpg"
             , "https://hips.hearstapps.com/vidthumb/images/delish-blueberry-cheesecake-still003-1557335639.jpg?crop=0.761xw%3A0.761xh%3B0.162xw%2C0.00570xh&resize=480%3A270"};
-
-
 }
