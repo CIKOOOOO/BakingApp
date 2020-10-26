@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/size_for_20dp"
+    android:layout_marginEnd="@dimen/size_for_20dp"
+    android:layout_marginBottom="@dimen/size_for_10dp"
+    android:background="@drawable/rectangle_rounded_stroke_gray"
+    android:paddingBottom="@dimen/size_for_10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/recycler_img_view_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_for_150dp"
+        android:layout_margin="@dimen/size_for_2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius_top_left="@dimen/size_for_10dp"
+        app:riv_corner_radius_top_right="@dimen/size_for_10dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"
+        app:riv_tile_mode="repeat" />
+
+    <TextView
+        android:id="@+id/recycler_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_for_5dp"
+        android:layout_marginEnd="@dimen/size_for_10dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size_for_20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/recycler_tv_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycler_img_view_item"
+        tools:text="Nutella Pie" />
+
+    <TextView
+        android:id="@+id/recycler_tv_body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_for_5dp"
+        android:layout_marginEnd="@dimen/size_for_10dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size_for_12sp"
+        app:layout_constraintEnd_toStartOf="@id/recycler_tv_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycler_tv_title"
+        tools:text="Servings : 8" />
+
+    <TextView
+        android:id="@+id/recycler_tv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_for_5dp"
+        android:background="@drawable/rectangle_rounded_stroke_blue"
+        android:paddingStart="@dimen/size_for_20dp"
+        android:paddingTop="@dimen/size_for_5dp"
+        android:paddingEnd="@dimen/size_for_20dp"
+        android:paddingBottom="@dimen/size_for_5dp"
+        android:text="@string/detail"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toTopOf="@id/recycler_tv_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycler_tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>
